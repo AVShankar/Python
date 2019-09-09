@@ -1,4 +1,4 @@
-#Given 2 numbers N and K followed by n numbers print the number of repetitions of K
+#Given 2 numbers N,M. Find the GCD
 
 N, M = map(int, input().split())
 result1 = []
