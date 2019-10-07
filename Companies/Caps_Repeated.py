@@ -3,22 +3,17 @@
 
 s = input().split()
 N = len(s)
-temp = []
 defaultDict = {}
 count = 0 
 limit = 1
 
-#converting into individual letters
+#adding to dict, to find the repetition
 for i in range(N):
     for j in s[i]:
-        temp.append(j)
-
-#adding to dict, to find the repetition
-for i in temp:
-    if(i in defaultDict):
-        defaultDict[i] += 1
-    else:
-        defaultDict[i] = 1
+        if(i in defaultDict):
+            defaultDict[i] += 1
+        else:
+            defaultDict[i] = 1
 
 #Making caps for repeated letters
 for i in s:
