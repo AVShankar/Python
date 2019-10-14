@@ -1,4 +1,4 @@
-#Sorting
+#Sorting asc odd and desc even
 
 N = int(input())
 n = list(map(int, input().split()[:N]))
