@@ -27,23 +27,23 @@ elif(len(openB) < len(closeB)):
 if(max == "open"):
     for i in range (0, diff):
         if(count > 1):
-            a = str[ : openB[i]-1]
-            b = str[ openB[i] : ]
+            a = str[ :openB[i]-1]
+            b = str[ openB[i]: ]
             str = a + b
         else:
-            a = str[ : openB[i]]
-            b = str[ openB[i]+1 : ]
+            a = str[ :openB[i]]
+            b = str[openB[i]+1: ]
             str = a + b
             
 if(max == "close"):
     for i in range (0, diff):
         if(count > 1):
-            a = str[ : closeB[i]-1]
-            b = str[ closeB[i] : ]
+            a = str[ :closeB[i]-1]
+            b = str[closeB[i]: ]
             str = a + b
         else:
-            a = str[ : closeB[i]]
-            b = str[ closeB[i]+1 : ]
+            a = str[ :closeB[i]]
+            b = str[closeB[i]+1: ]
             str = a + b
 
 leng =  len(str)
