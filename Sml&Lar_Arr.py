@@ -2,7 +2,6 @@
 
 N=int(input())
 K=list(map(int, input().split()[:N]))
-length = len(K)
 
 if(N <= 100000):
     for i in range (0, N):
